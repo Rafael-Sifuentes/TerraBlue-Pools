@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;700;900&display=swap');
+
+/* VARIABLE CSS================================================================================- */
+/*-============================================================================================- */
+:root{
+
+    /* COLORS=---------------- */
+    --primary-color: #FF0000;
+    --accent-color: #212121;
+    --text-color-w: #D9D9D9;
+    --text-color-b: #212121;
+    --container-color: #262626;
+    --body-color: #F5F5F5;
+    /* ======================= */
+
+
+    /* FONT & TYPOGRAPHY====== */
+    --body-font: 'Montserrat', sans-serif;
+
+    --h1-font-size: 5.61rem;
+    --h2-font-size: 4.209rem;
+    --h3-font-size: 3.157rem;
+    --h4-font-size: 2.369rem;
+    --h5-font-size: 1.777rem;
+    --h6-font-size: 1.333rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.75rem;
+
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-black: 900;
+    /* ======================= */
+
+
+    /* MARGINS & PADDING ===== */
+    --gap-1: 1rem; /*---------------16px*/
+
+    --gap-2: 1.5rem; /*-------------24px*/
+
+    --gap-3: 2rem; /*---------------32px*/
+
+    --gap-4: 3rem; /*---------------48px*/
+
+    --gap-5: 4rem; /*---------------64px*/
+
+    --gap-6: 5rem; /*---------------80px*/
+
+    --gap-7: 8rem; /*--------------128px*/
+    /* ======================= */
+
+
+    /* MISC=================== */
+    --z-fixed: 15;
+    /* ======================= */
+
+}
+/*-============================================================================================- */
+
+/* HTML BASE===================================================================================- */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+}
+
+h1{
+    font-size: var(--h1-font-size);
+}
+
+h2{
+    font-size: var(--h2-font-size);
+}
+
+h3{
+    font-size: var(--h3-font-size);
+}
+
+h4{
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-light);
+}
+
+h5{
+    font-size: var(--h5-font-size);
+}
+
+h6{
+    font-size: var(--h6-font-size);
+}
+
+p{
+    font-size: var(--normal-font-size);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+}
+/*-============================================================================================- */
+
+/* RESPONSIVE BREAKPOINTS======================================================================- */
+
+/* FOR SML MOBILE */
+@media screen and (max-width : 389px){
+    .container{
+        margin: 0 1rem;
+    }
+}
+
+/* FOR MOBILE */
+@media screen and (min-width: 390px){
+    .container{
+        max-width: 358px;
+        margin: 0 auto;
+    }
+}
+
+/* FOR TABLE  */
+@media screen and (min-width: 744px){
+    .container{
+        max-width: 680px;
+        margin: 0 auto;
+    }
+}
+
+/* FOR DESKTOP */
+@media screen and (min-width: 1100px){
+    .container{
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+}
+/*-============================================================================================- */
+
+/*-REUSABLE CSS CLASSES========================================================================- */
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.responsive-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+}
+
+.section{
+    position: relative;
+    padding-bottom: 8rem;
+    overflow: hidden;
+}
+
+.p-text{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.transition{
+    transition: all .4s ease-in-out;
+}
+/*-============================================================================================- */
+
+/* CSS COMPONENTS =============================================================================- */
+
+/* BUTTONS */
+button{
+    width: 252px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button p{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+}
+/* -------- */
+
+/*-============================================================================================- */
+
+
+/* HOME SECTION ===============================================================================- */
+
+/* FOR MOBILE */
+@media screen and (min-width: 390px){
+    
+    h2{
+        font-size: var(--h4-font-size);
+    }
+
+    h4{
+        font-size: var(--normal-font-size);
+    }
+}
+
+body{
+    padding-top: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E0A18;
+    color: #E9DFE0;
+    gap: var(--gap-2);
+    text-align: center;
+}
+
+p{
+    color: var(--text-color-w);
+}
+
+.img-container{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+/*-============================================================================================- */
