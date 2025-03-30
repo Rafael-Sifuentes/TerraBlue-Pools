@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="assets/IMG/Favicon.png" type="image/x-icon">
     <!-- REMIX ICONS -->
@@ -13,26 +12,381 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- COMPONENT CSS -->
     <link rel="stylesheet" href="assets/styles.css">
-    <title>ETX LAMBDA</title>
+    <title>ETX_LAMBDA(V1.2.8)</title>
     <meta name="description" content=""> 
     <meta title="keywords" content="">
 </head>
 <body>
 
-    <div class="img-container"><img src="assets/img/code-logo.png" alt="ETX Logo"></div>
-    
-    <h2>This site is under development</h2>
-    <h4>by ETX <b>Design</b></h4>
+    <!-- HOME SECTION ================================================================================== -->
+    <header class="home section" id="home">
+        <div class="home-container container flex-column">
 
-    <p>Terrabluepools.com</p>
+            <ul class="home-list">
+                <li class="home-list-item"><p>Design</p></li>
+                <li class="home-list-item"><p>Engineering</p></li>
+                <li class="home-list-item"><p>3D Modeling</p></li>
+                <li class="home-list-item"><p>Construction</p></li>
+                <li class="home-list-item"><p>Maintenance</p></li>
+            </ul>
+
+            <h1 class="home-title">Terra<span>Blue</span></h1>
+            <h4 class="home-subtitle">Custom pools & landscaping in greater Houston Tx</h4>
+
+            <button onclick="scrollToSection('gallery')" class="home-button"><p>View our projects</p></button>
+
+            <div class="home-footer">
+                <div class="home-line"></div>
+                <h6>Explore</h6>
+                <button onclick="scrollToSection('services')" class="home-button-second"><i class="ri-arrow-down-s-line"></i></button>
+            </div>
+        </div>
+
+        <img src="assets/img/Home-background-img.png" alt="Home Home background img" class="home-img">
+    </header>
+    <!-- =============================================================================================== -->
+
+    <main>
+
+        <!-- SERVICES SECTION ========================================================================== -->
+       <section class="services section" id="services">
+        <div class="services-container container flex-column">
+
+            <h4 class="reveal-type splt services-text">We are Terrablue. A Houston based custom pool building company that is committed to providing the best experience and unmatched client satisfaction.</h4>
+
+            <h3 class="section-title services-title">Our Services.</h3>
+            <div class="services-flex-container">
+
+                <ul class="services-scroll-list">
+                    <li class="services-scroll-list-item"><p>Custom Pools</p></li>
+                    <li class="services-scroll-list-item"><p>Pool remodels</p></li>
+                    <li class="services-scroll-list-item"><p>Patios & decks</p></li>
+                    <li class="services-scroll-list-item"><p>Landscaping</p></li>
+                    <li class="services-scroll-list-item"><p>Special features</p></li>
+                    <li class="services-scroll-list-item"><p>Maintenance</p></li>
+                    <li class="services-scroll-list-item"><p>Custom Homes</p></li>
+                </ul>
+
+                <div class="service-cards-container">
+
+                    <div class="service-card-component flex-column">
+                        <div class="card-content">
+
+                            <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                            <p>A description will be provided right here for Design.</p>
+
+                            <img src="assets/img/services-img-1.png" alt="Design service image" class="service-card-img">
+                        </div>
+                        <h5>Design</h5>
+                    </div>
+
+                    <div class="service-card-component flex-column">
+                        <div class="card-content">
+
+                            <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                            <p>A description will be provided right here for 3D modeling.</p>
+
+                            <img src="assets/img/services-img-2.png" alt="3D Modeling service image" class="service-card-img">
+                        </div>
+                        <h5>3D Modeling</h5>
+                    </div>
+
+                    <div class="service-card-component flex-column">
+                        <div class="card-content">
+
+                            <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                            <p>A description will be provided right here for permit acquisition.</p>
+
+                            <img src="assets/img/services-img-3.png" alt="Permit acquisition service image" class="service-card-img">
+                        </div>
+                        <h5>Permit acquisition</h5>
+                    </div>
+
+                    <div class="service-card-component flex-column">
+                        <div class="card-content">
+
+                            <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                            <p>A description will be provided right here for construction.</p>
+
+                            <img src="assets/img/services-img-4.png" alt="Construction service image" class="service-card-img">
+                        </div>
+                        <h5>Construction</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+        <!-- =========================================================================================== -->
+
+        <!-- GALLERY SECTION =========================================================================== -->
+       <section class="gallery section" id="gallery">
+
+        <div class="gallery-container container flex-column swiper">
+            <div class="section-accent gallery-section-accent">
+                <div class="section-name"><p>Our portfolio</p></div>
+                <div class="section-line"></div>
+            </div>
+
+            <h3 class="gallery-title section-title">
+                Our work and our meticulous attention to detail is what truly sets us apart from the competition. See for yourself.
+            </h3>
+
+            <div class="gallery-flex-container">
+                <p class="p-text">Swipe through our incredible portfolio of uniquely crafted pools</p>
+                <div class="gallery-btns-container">
+                    <button class="gallery-swiper-btn gallery-swiper-prev"><i class="ri-arrow-left-s-line"></i></button>
+                    <button class="gallery-swiper-btn gallery-swiper-next"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+
+            </div>
+
+            <ul class="gallery-swiper-wrapper swiper-wrapper">
+                <li class="gallery-card-component swiper-slide flex-column">
+                    <div class="gallery-card-img"><img src="assets/img/gallery-img-1.png" alt="Project 1 image"></div>
+                    <button class="gallery-card-button"><p>View project</p></button>
+                </li>
+
+                <li class="gallery-card-component swiper-slide flex-column">
+                    <div class="gallery-card-img"><img src="assets/img/gallery-img-2.png" alt="Project 2 image"></div>
+                    <button class="gallery-card-button"><p>View project</p></button>
+                </li>
+
+                <li class="gallery-card-component swiper-slide flex-column">
+                    <div class="gallery-card-img"><img src="assets/img/gallery-img-3.png" alt="Project 3 image"></div>
+                    <button class="gallery-card-button"><p>View project</p></button>
+                </li>
+
+                <li class="gallery-card-component swiper-slide flex-column">
+                    <div class="gallery-card-img"><img src="assets/img/gallery-img-4.png" alt="Project 4 image"></div>
+                    <button class="gallery-card-button"><p>View project</p></button>
+                </li>
+
+                <li class="gallery-card-component swiper-slide flex-column">
+                    <div class="gallery-card-img"><img src="assets/img/gallery-img-5.png" alt="Project 5 image"></div>
+                    <button class="gallery-card-button"><p>View project</p></button>
+                </li>
+
+                <li class="gallery-card-component swiper-slide flex-column">
+                    <div class="gallery-card-img"><img src="assets/img/gallery-img-6.png" alt="Project 6 image"></div>
+                    <button class="gallery-card-button"><p>View project</p></button>
+                </li>
+
+                <li class="gallery-card-component swiper-slide flex-column">
+                    <div class="gallery-card-img"><img src="assets/img/gallery-img-7.png" alt="Project 7 image"></div>
+                    <button class="gallery-card-button"><p>View project</p></button>
+                </li>
+
+                <li class="gallery-card-component swiper-slide flex-column">
+                    <div class="gallery-card-img"><img src="assets/img/gallery-img-8.png" alt="Project 8 image"></div>
+                    <button class="gallery-card-button"><p>View project</p></button>
+                </li>
+
+                <li class="gallery-card-component swiper-slide flex-column">
+                    <div class="gallery-card-img"><img src="assets/img/gallery-img-9.png" alt="Project 9 image"></div>
+                    <button class="gallery-card-button"><p>View project</p></button>
+                </li>
+            </ul>
+        </div>
+       </section>
+        <!-- =========================================================================================== -->
+
+        <!-- ABOUT SECTION ============================================================================= -->
+        <section class="about section" id="about">
+            <div class="about-container container flex-column">
+
+                <div class="about-section-accent section-accent">
+                    <div class="section-line"></div>
+                    <div class="section-name"><p>About us</p></div>
+                </div>
+
+                <div class="about-flex-container-one">
+                    <h3 class="about-title section-title">Custom solutions, with real results at TerraBlue</h3>
+                    <p class="p-text">Terra Blue is a custom pool and landscaping company that specializes in creating beautiful outdoor living spaces. We are passionate about transforming your backyard into a luxurious oasis where you can relax, entertain, and create memories with your loved ones.</p>
+                </div>
+
+                <div class="about-flex-container-two">
+                    <div class="about-img-one"><img src="assets/img/about-img-1.png" alt="About us image one"></div>
+                    <div class="about-flex-container-three">
+                        <div class="about-flex-container-four">
+                            <div class="about-img-two"><img src="assets/img/about-img-2.png" alt="About us image two"></div>
+                            <div class="about-flex-container-five"><h3>100 <span>+</span></h3><h6>Completed projects</h6></div>
+                        </div>
+
+                        <div class="about-flex-container-four">
+                            <div class="about-img-two"><img src="assets/img/about-img-3.png" alt="About us image three"></div>
+                            <div class="about-flex-container-five"><h3>10 <span>+</span></h3><h6>Years of experience</h6></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section-accent section-accent">
+                    <div class="section-name"><p>Time-lapse</p></div>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="video-container">
+                    <img src="assets/img/video-img.png" alt="Video placeholder">
+                    <button class="video-toggle"><i class="ri-pause-circle-fill"></i></button>
+                </div>
+
+            </div>
+
+            <div class="about-background"></div>
+        </section>
+        <!-- =========================================================================================== -->
+
+        <!-- REVIEW SECTION ============================================================================ -->
+        <section class="review section" id="review">
+            <div class="review-container container flex-column">
+                <div class="review-frame-one">
+                    <h3 class="review-title section-title">What our clients have said.</h3>
+                    <div class="gallery-btns-container">
+                        <button class="review-swiper-btn review-swiper-prev"><i class="ri-arrow-left-s-line"></i></button>
+                        <button class="review-swiper-btn review-swiper-next"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+
+                <ul class="review-cards-container swiper-wrapper">
+
+                    <li class="review-card swiper-slide flex-column">
+                        <div class="review-card-header"><div class="user"><i class="ri-user-line"></i></div><h6>Micheal Scott</h6></div>
+                        <p>We were so impressed with Terrablue's commitment to quality and customer service. They went above and beyond to ensure that our pool was built to perfection. </p>
+                    </li>
+
+                    <li class="review-card swiper-slide flex-column">
+                        <div class="review-card-header"><div class="user"><i class="ri-user-line"></i></div><h6>Micheal Scott</h6></div>
+                        <p>We were so impressed with Terrablue's commitment to quality and customer service. They went above and beyond to ensure that our pool was built to perfection. </p>
+                    </li>
+
+                    <li class="review-card swiper-slide flex-column">
+                        <div class="review-card-header"><div class="user"><i class="ri-user-line"></i></div><h6>Micheal Scott</h6></div>
+                        <p>We were so impressed with Terrablue's commitment to quality and customer service. They went above and beyond to ensure that our pool was built to perfection. </p>
+                    </li>
+
+                    <li class="review-card swiper-slide flex-column">
+                        <div class="review-card-header"><div class="user"><i class="ri-user-line"></i></div><h6>Micheal Scott</h6></div>
+                        <p>We were so impressed with Terrablue's commitment to quality and customer service. They went above and beyond to ensure that our pool was built to perfection. </p>
+                    </li>
+                </ul>
+
+                <div class="review-section-accent section-accent">
+                    <div class="section-line"></div>
+                    <div class="section-name"><p>Our Time-line</p></div>
+                </div>
+
+                <h4 class="review-text reveal-type">
+                    At TerraBlue Pools, our custom pool building process includes design, excavation, gunite application, tile installation, and finishing, all while prioritizing quality, transparency, and innovation every step of the way.
+                </h4>
+
+                <ul class="timeline-container" id="timeline">
+                    <li class="timeline-item">
+                        <h5>Initial consultation & design</h5>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h5>Permitting & planning</h5>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h5>Construction</h5>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h5>Final handover & walkthrough</h5>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+
+        <!-- CONTACT SECTION =========================================================================== -->
+        <section class="contact section" id="contact">
+            <div class="contact-container container flex-column">
+                <h2 class="cta-title">Ready to transform your backyard <b>into an Oasis ?</b></h2>
+
+                <div class="contact-cta-container">
+                    <a href="" rel="stylesheet" class="contact-link">Schedule a free consultation</a>
+                    <button class="cta-button"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+
+                <a href="#" class="contact-cta-link-alt">See more projects</a>
+            </div>
+
+            <img src="assets/img/contact-background-img.png" alt="Contact background image" class="contact-img">
+        </section>
+        <!-- =========================================================================================== -->
+
+    </main>
+
+    <!-- FOOTER SECTION ================================================================================ -->
+    <footer class="footer section" id="footer">
+        <div class="footer-container container">
+
+            <div class="footer-frame-one flex-column">
+                <div class="footer-logo"><div class="footer-img"><img src="assets/img/Main-logo.png" alt="TerraBlue Logo"></div><h5>Terra<span>Blue</span></h5></div>
+                <div class="p-text">We are a custom pool builder and landscaping company located in Houston Tx.</div>
+                <div class="footer-info-container">
+                    <p>info@terrabluepools.com</p>
+                    <p>832.329.4855</p>
+                </div>
+
+                <ul class="footer-btn-links">
+                    <li class="footer-btn"><i class="ri-facebook-circle-fill"></i></li>
+                    <li class="footer-btn"><i class="ri-instagram-fill"></i></li>
+                    <li class="footer-btn"><i class="ri-mail-send-fill"></i></li>
+                    <li class="footer-btn"><i class="ri-phone-fill"></i></li>
+                </ul>
+            </div>
+
+            <div class="footer-frame-two">
+                <div class="footer-link-container">
+                    <h6>Home</h6>
+                    <ul>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#gallery">Portfolio</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#review">Client reviews</a></li>
+                        <li><a href="#timeline">Time-line</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-link-container">
+                    <h6>Maintenance</h6>
+                    <ul>
+                        <li><a href="#Services">Cleanings</a></li>
+                        <li><a href="#gallery">Chemicals</a></li>
+                        <li><a href="#about">Packages</a></li>
+                        <li><a href="#review">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-link-container">
+                    <h6>Our projects</h6>
+                    <ul>
+                        <li><a href="#Services">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="footer-signature">
+                <div><p><b>ETX</b> DESIGN</p><div class="img-container"><img src="assets/img/code-logo.png" alt="ETX Design logo"></div></div>
+                <p class="p-text">&#169 2025</p>
+            </div>
+        </div>
+    </footer>
+    <!-- =============================================================================================== -->
 
 
     <!-- JAVASCRIPT =============================================================== -->
     <!-- SCROLL REVEAL JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- GSAP JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type@0.3.3/umd/index.min.js"></script>
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- PAGE SPECIFIC JS -->
