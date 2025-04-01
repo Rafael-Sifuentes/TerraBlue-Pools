@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- COMPONENT CSS -->
     <link rel="stylesheet" href="assets/styles.css">
-    <title>ETX_LAMBDA(V1.2.8)</title>
+    <title>TerraBlue Pools & Landscaping</title>
     <meta name="description" content=""> 
     <meta title="keywords" content="">
 </head>
@@ -33,7 +33,7 @@
             <h1 class="home-title">Terra<span>Blue</span></h1>
             <h4 class="home-subtitle">Custom pools & landscaping in greater Houston Tx</h4>
 
-            <button onclick="scrollToSection('gallery')" class="home-button"><p>View our projects</p></button>
+            <button onclick="scrollToSection('services')" class="home-button"><p>View our services</p></button>
 
             <div class="home-footer">
                 <div class="home-line"></div>
@@ -49,73 +49,150 @@
     <main>
 
         <!-- SERVICES SECTION ========================================================================== -->
-       <section class="services section" id="services">
-        <div class="services-container container flex-column">
-
-            <h4 class="reveal-type splt services-text">We are Terrablue. A Houston based custom pool building company that is committed to providing the best experience and unmatched client satisfaction.</h4>
-
-            <h3 class="section-title services-title">Our Services.</h3>
-            <div class="services-flex-container">
-
-                <ul class="services-scroll-list">
-                    <li class="services-scroll-list-item"><p>Custom Pools</p></li>
-                    <li class="services-scroll-list-item"><p>Pool remodels</p></li>
-                    <li class="services-scroll-list-item"><p>Patios & decks</p></li>
-                    <li class="services-scroll-list-item"><p>Landscaping</p></li>
-                    <li class="services-scroll-list-item"><p>Special features</p></li>
-                    <li class="services-scroll-list-item"><p>Maintenance</p></li>
-                    <li class="services-scroll-list-item"><p>Custom Homes</p></li>
-                </ul>
-
-                <div class="service-cards-container">
-
-                    <div class="service-card-component flex-column">
-                        <div class="card-content">
-
-                            <div class="service-card-toggle"><i class="ri-add-line"></i></div>
-                            <p>A description will be provided right here for Design.</p>
-
-                            <img src="assets/img/services-img-1.png" alt="Design service image" class="service-card-img">
+        <section class="services section" id="services">
+            <div class="services-container container flex-column">
+        
+                <h4 class="reveal-type splt services-text">We are Terrablue. A Houston based custom pool building company that is committed to providing the best experience and unmatched client satisfaction.</h4>
+        
+                <h3 class="section-title services-title">Our Services. <span>Swipe and tap to see different services<i class="ri-arrow-right-s-line"></i></span></h3>
+                <div class="services-flex-container">
+        
+                    <ul class="services-scroll-list filter-list">
+                        <li class="services-scroll-list-item filter" data-filter=".custom-pools"><p>Custom Pools</p></li>
+                        <li class="services-scroll-list-item filter" data-filter=".pool-remodels"><p>Pool remodels</p></li>
+                        <li class="services-scroll-list-item filter" data-filter=".patios-decks"><p>Patios & decks</p></li>
+                        <li class="services-scroll-list-item filter" data-filter=".landscaping"><p>Landscaping</p></li>
+                        <li class="services-scroll-list-item filter" data-filter=".special-features"><p>Special features</p></li>
+                        <li class="services-scroll-list-item filter" data-filter=".maintenance"><p>Maintenance</p></li>
+                        <li class="services-scroll-list-item filter" data-filter=".custom-homes"><p>Custom Homes</p></li>
+                    </ul>
+        
+                    <div class="service-cards-container grid">
+        
+                        <div class="service-card-component flex-column mix custom-pools">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>A description will be provided right here for Design.</p>
+                                <img src="assets/img/services-img-1.png" alt="Design service image" class="service-card-img">
+                            </div>
+                            <h5>Design</h5>
                         </div>
-                        <h5>Design</h5>
-                    </div>
-
-                    <div class="service-card-component flex-column">
-                        <div class="card-content">
-
-                            <div class="service-card-toggle"><i class="ri-add-line"></i></div>
-                            <p>A description will be provided right here for 3D modeling.</p>
-
-                            <img src="assets/img/services-img-2.png" alt="3D Modeling service image" class="service-card-img">
+        
+                        <div class="service-card-component flex-column mix custom-pools">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>A description will be provided right here for 3D modeling.</p>
+                                <img src="assets/img/services-img-2.png" alt="3D Modeling service image" class="service-card-img">
+                            </div>
+                            <h5>3D Modeling</h5>
                         </div>
-                        <h5>3D Modeling</h5>
-                    </div>
-
-                    <div class="service-card-component flex-column">
-                        <div class="card-content">
-
-                            <div class="service-card-toggle"><i class="ri-add-line"></i></div>
-                            <p>A description will be provided right here for permit acquisition.</p>
-
-                            <img src="assets/img/services-img-3.png" alt="Permit acquisition service image" class="service-card-img">
+        
+                        <div class="service-card-component flex-column mix custom-pools">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>A description will be provided right here for permit acquisition.</p>
+                                <img src="assets/img/services-img-3.png" alt="Permit acquisition service image" class="service-card-img">
+                            </div>
+                            <h5>Permit acquisition</h5>
                         </div>
-                        <h5>Permit acquisition</h5>
-                    </div>
-
-                    <div class="service-card-component flex-column">
-                        <div class="card-content">
-
-                            <div class="service-card-toggle"><i class="ri-add-line"></i></div>
-                            <p>A description will be provided right here for construction.</p>
-
-                            <img src="assets/img/services-img-4.png" alt="Construction service image" class="service-card-img">
+        
+                        <div class="service-card-component flex-column mix custom-pools">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>A description will be provided right here for construction.</p>
+                                <img src="assets/img/services-img-4.png" alt="Construction service image" class="service-card-img">
+                            </div>
+                            <h5>Construction</h5>
                         </div>
-                        <h5>Construction</h5>
+        
+                        <div class="service-card-component flex-column mix pool-remodels">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>Revitalize your pool's appearance and functionality with our expert resurfacing and retiling services. Choose from a variety of premium materials and finishes to create a stunning, long-lasting pool surface.</p>
+                                <img src="assets/img/services-img-5.png" alt="Resurfacing and Retiling" class="service-card-img">
+                            </div>
+                            <h5>Resurfacing & Retiling</h5>
+                        </div>
+                        <div class="service-card-component flex-column mix pool-remodels">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>Improve energy efficiency and performance with modern pool equipment upgrades. We install and integrate advanced pumps, filters, heaters, and automation systems to optimize your pool's operation.</p>
+                                <img src="assets/img/services-img-6.png" alt="Equipment Upgrades" class="service-card-img">
+                            </div>
+                            <h5>Equipment Upgrades</h5>
+                        </div>
+        
+                        <div class="service-card-component flex-column mix patios-decks">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>Create the perfect outdoor living space with our custom patio design and installation services. We work with a variety of materials, including pavers, natural stone, and concrete.</p>
+                                <img src="assets/img/services-img-7.png" alt="Custom Patio Design" class="service-card-img">
+                            </div>
+                            <h5>Custom Patio Design & Installation</h5>
+                        </div>
+                        <div class="service-card-component flex-column mix patios-decks">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>Build a beautiful and functional deck for entertaining or relaxation. We offer custom deck construction and repair services, using high-quality materials such as composite decking, redwood, and cedar.</p>
+                                <img src="assets/img/services-img-8.png" alt="Deck Construction" class="service-card-img">
+                            </div>
+                            <h5>Deck Construction & Repair</h5>
+                        </div>
+        
+                        <div class="service-card-component flex-column mix landscaping">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>Transform your outdoor space with our custom landscape design services. We create unique and functional landscapes that reflect your style and enhance your property's curb appeal.</p>
+                                <img src="assets/img/services-img-9.png" alt="Custom Landscape Design" class="service-card-img">
+                            </div>
+                            <h5>Custom Landscape Design</h5>
+                        </div>
+                        <div class="service-card-component flex-column mix landscaping">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>Enhance your landscape with vibrant plants and gardens. We select and install plants that thrive in your local climate, creating beautiful and sustainable outdoor spaces.</p>
+                                <img src="assets/img/services-img-10.png" alt="Planting & Garden Installation" class="service-card-img">
+                            </div>
+                            <h5>Planting & Garden Installation</h5>
+                        </div>
+        
+                        <div class="service-card-component flex-column mix special-features">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>Add a touch of elegance and tranquility to your pool or landscape with our custom waterfall and fountain installations. We design and build water features that create a stunning focal point.</p>
+                                <img src="assets/img/services-img-11.png" alt="Waterfalls & Fountains" class="service-card-img">
+                            </div>
+                            <h5>Waterfalls & Fountains</h5>
+                        </div>
+                        <div class="service-card-component flex-column mix special-features">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>Relax and rejuvenate with a custom-built spa or hot tub. We offer a variety of designs and features to create the perfect personal oasis.</p>
+                                <img src="assets/img/services-img-12.png" alt="Spas & Hot Tubs" class="service-card-img">
+                            </div>
+                            <h5>Spas & Hot Tubs</h5>
+                        </div>
+        
+                        <div class="service-card-component flex-column mix maintenance">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>Maintain a clean and healthy pool with our regular cleaning services. We handle all aspects of pool maintenance, including skimming, vacuuming, and chemical balancing.</p>
+                                <img src="assets/img/services-img-13.png" alt="Weekly/Monthly Pool Cleaning" class="service-card-img">
+                            </div>
+                            <h5>Weekly/Monthly Pool Cleaning</h5>
+                        </div>
+                        <div class="service-card-component flex-column mix maintenance">
+                            <div class="card-content">
+                                <div class="service-card-toggle"><i class="ri-add-line"></i></div>
+                                <p>Ensure your pool equipment is running smoothly with our professional inspection and repair services. We diagnose and fix any issues to prevent costly breakdowns.</p>
+                                <img src="assets/img/services-img-14.png" alt="Equipment Inspection & Repair" class="service-card-img">
+                            </div>
+                            <h5>Equipment Inspection & Repair</h5>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-       </section>
+        </section>
         <!-- =========================================================================================== -->
 
         <!-- GALLERY SECTION =========================================================================== -->
@@ -194,7 +271,7 @@
         <section class="about section" id="about">
             <div class="about-container container flex-column">
 
-                <div class="about-section-accent section-accent">
+                <div class="about-section-accent section-accent section-alt">
                     <div class="section-line"></div>
                     <div class="section-name"><p>About us</p></div>
                 </div>
@@ -209,17 +286,17 @@
                     <div class="about-flex-container-three">
                         <div class="about-flex-container-four">
                             <div class="about-img-two"><img src="assets/img/about-img-2.png" alt="About us image two"></div>
-                            <div class="about-flex-container-five"><h3>100 <span>+</span></h3><h6>Completed projects</h6></div>
+                            <div class="about-flex-container-five"><h3 class="count-up" data-target="100">0<span>+</span></h3><h6>Completed projects</h6></div>
                         </div>
 
                         <div class="about-flex-container-four">
                             <div class="about-img-two"><img src="assets/img/about-img-3.png" alt="About us image three"></div>
-                            <div class="about-flex-container-five"><h3>10 <span>+</span></h3><h6>Years of experience</h6></div>
+                            <div class="about-flex-container-five"><h3 class="count-up" data-target="10">0<span>+</span></h3><h6>Years of experience</h6></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="about-section-accent section-accent">
+                <div class="video-section-accent section-accent">
                     <div class="section-name"><p>Time-lapse</p></div>
                     <div class="section-line"></div>
                 </div>
@@ -269,7 +346,7 @@
                     </li>
                 </ul>
 
-                <div class="review-section-accent section-accent">
+                <div class="review-section-accent section-accent section-alt">
                     <div class="section-line"></div>
                     <div class="section-name"><p>Our Time-line</p></div>
                 </div>
@@ -305,8 +382,8 @@
                 <h2 class="cta-title">Ready to transform your backyard <b>into an Oasis ?</b></h2>
 
                 <div class="contact-cta-container">
-                    <a href="" rel="stylesheet" class="contact-link">Schedule a free consultation</a>
-                    <button class="cta-button"><i class="ri-arrow-right-s-line"></i></button>
+                    <a href="https://calendly.com/rafaelsifuentes-etxsoftware/30min" target="_blank" rel="stylesheet" class="contact-link">Schedule a free consultation</a>
+                    <button onclick="openCalendly()" class="cta-button"><i class="ri-arrow-right-s-line"></i></button>
                 </div>
 
                 <a href="#" class="contact-cta-link-alt">See more projects</a>
@@ -323,7 +400,7 @@
         <div class="footer-container container">
 
             <div class="footer-frame-one flex-column">
-                <div class="footer-logo"><div class="footer-img"><img src="assets/img/Main-logo.png" alt="TerraBlue Logo"></div><h5>Terra<span>Blue</span></h5></div>
+                <div onclick="scrollToSection('home')" class="footer-logo"><div class="footer-img"><img src="assets/img/Main-logo.png" alt="TerraBlue Logo"></div><h5>Terra<span>Blue</span></h5></div>
                 <div class="p-text">We are a custom pool builder and landscaping company located in Houston Tx.</div>
                 <div class="footer-info-container">
                     <p>info@terrabluepools.com</p>
@@ -331,10 +408,10 @@
                 </div>
 
                 <ul class="footer-btn-links">
-                    <li class="footer-btn"><i class="ri-facebook-circle-fill"></i></li>
-                    <li class="footer-btn"><i class="ri-instagram-fill"></i></li>
-                    <li class="footer-btn"><i class="ri-mail-send-fill"></i></li>
-                    <li class="footer-btn"><i class="ri-phone-fill"></i></li>
+                    <li onclick="openFace()" class="footer-btn"><i class="ri-facebook-circle-fill"></i></li>
+                    <li onclick="openInsta()" class="footer-btn"><i class="ri-instagram-fill"></i></li>
+                    <li onclick="openCalendly()" class="footer-btn"><i class="ri-calendar-event-line"></i></li>
+                    <li onclick="callNumber()" class="footer-btn"><i class="ri-phone-fill"></i></li>
                 </ul>
             </div>
 
@@ -382,11 +459,13 @@
 
     <!-- JAVASCRIPT =============================================================== -->
     <!-- SCROLL REVEAL JS -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/scrollreveal.min.js"></script>
     <!-- GSAP JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type@0.3.3/umd/index.min.js"></script>
+    <!-- MIXITUP JS  -->
+    <script src="assets/mixitup.min.js"></script>
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- PAGE SPECIFIC JS -->
