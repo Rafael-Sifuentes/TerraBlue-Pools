@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to highlight the active section link
     function highlightActiveSection() {
-        const sections = ['services', 'gallery', 'about', 'reviews', 'contact'];
+        const sections = ['services', 'gallery', 'about', 'review', 'contact'];
         const navLinks = document.querySelectorAll('.nav-list a');
 
         sections.forEach((sectionId, index) => {
@@ -221,6 +221,67 @@ document.querySelectorAll('.nav-list a').forEach((link) => {
           gsap.to(el, { scrollTrigger: { trigger: el, start: 'top 80%', end: 'bottom 20%', once: true, }, onUpdate: function () { current = Math.ceil(this.progress() * target); element.textContent = current; element.appendChild(span); }, duration: 2, ease: 'power2.out', });
       });
   });
+
+
+
+  const galleryCards = document.querySelectorAll('.gallery-card-component');
+    const galleryShowcase = document.querySelector('.gallery-showcase');
+    const showcaseCloseBtn = galleryShowcase.querySelector('.showcase-close-btn');
+    const showcaseList = galleryShowcase.querySelector('.showcase-list');
+
+    galleryCards.forEach((card, index) => {
+        const viewProjectButton = card.querySelector('.gallery-card-button');
+
+        viewProjectButton.addEventListener('click', () => {
+            // Clear previous content
+            showcaseList.innerHTML = '';
+
+            // Create the corresponding showcase item
+            const showcaseItem = document.createElement('li');
+            showcaseItem.classList.add('showcase-list-item', 'flex-column');
+
+            // Determine the image source based on the clicked card's index
+            const imgSrc = card.querySelector('.gallery-card-img img').src;
+
+            // Create the image container (you can customize this structure)
+            const imgContainer = document.createElement('div');
+            imgContainer.classList.add('list-item-grid', 'grid');
+            imgContainer.innerHTML = `
+                <div class="img-container"><img src="${imgSrc}" alt="Project ${index + 1} image"></div>
+                <div class="img-container"><img src="assets/img/gallery-img-${index + 2}.png" alt="Project ${index + 2} image"></div>
+                <div class="img-container"><img src="assets/img/gallery-img-${index + 3}.png" alt="Project ${index + 3} image"></div>
+                `;
+
+            const showcaseButtonContainer = document.createElement('div');
+            showcaseButtonContainer.classList.add('showcase-button-container');
+            showcaseButtonContainer.innerHTML = `
+                <button onClick="openCalendly()" class="showcase-button"><p class="p-text">Schedule appointment</p></button>
+                <button class="showcase-close-btn"><i class="ri-close-line"></i><p>Close</p></button>
+            `;
+
+            showcaseItem.appendChild(imgContainer);
+            showcaseItem.appendChild(showcaseButtonContainer);
+            showcaseList.appendChild(showcaseItem);
+
+            // Add event listener to the newly created close button
+            const newCloseButton = showcaseItem.querySelector('.showcase-close-btn');
+            newCloseButton.addEventListener('click', () => {
+                galleryShowcase.classList.remove('showcase-active');
+                document.body.style.overflow = ''; // Re-enable scrolling
+            });
+
+            galleryShowcase.classList.add('showcase-active');
+            document.body.style.overflow = 'hidden'; // Disable scrolling on the body
+        });
+    });
+
+    // Close the showcase if the initial close button (if it exists) is clicked
+    if (showcaseCloseBtn) {
+        showcaseCloseBtn.addEventListener('click', () => {
+            galleryShowcase.classList.remove('showcase-active');
+            document.body.style.overflow = ''; // Re-enable scrolling
+        });
+    }
 });
 
 
