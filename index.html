@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@mux/mux-player"></script>
     <link rel="shortcut icon" href="assets/IMG/Favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
@@ -439,9 +440,19 @@
                     <div class="section-line"></div>
                 </div>
 
-                <div class="video-container">
+                <!-- <div class="video-container">
                     <img src="assets/img/video-img.png" alt="Video placeholder">
                     <button class="video-toggle"><i class="ri-pause-circle-fill"></i></button>
+                </div> -->
+
+                <div class="video-container">
+                    <mux-player
+                      class="video-container"
+                      stream-type="on-demand"
+                      playback-id="ZqJoMdnV8BRVpEA6b8BLioK419c7XHMFUXFgW1u4FIQ"
+                      accent-color="#4DB5C1"></mux-player>
+                      poster="assets/img/video-img.png">
+                    </mux-player>
                 </div>
 
             </div>
