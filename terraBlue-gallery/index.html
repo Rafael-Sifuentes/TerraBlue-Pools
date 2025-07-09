@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@mux/mux-player"></script>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/IMG/Favicon.png" type="image/x-icon">
+    <!-- REMIX ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- COMPONENT CSS -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>TerraBlue Gallery</title>
+    <meta name="description" content=""> 
+    <meta title="keywords" content="">
+</head>
+<body>
+
+    <!-- HOME SECTION ================================================================================== -->
+   <section class="home section" id="gallery-home">
+
+    <nav class="nav" id="nav">
+        <div class="nav-header container">
+            <div class="nav-logo"><a href="/index.html"><div class="img-container"><img src="assets/img/Main-logo.png" alt="TerraBlue logo"></div><h6>Terra<span>Blue</span></h6></a></div>
+
+            <div class="nav-toggle">
+                <div class="icon-container">
+                    <div><i class="ri-menu-4-line"></i><i class="ri-close-line"></i></div>
+                </div>
+                <div class="word-toggle">
+                    <div><p>Menu</p><p>Close</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-screen">
+            <div class="container">
+
+                <div class="nav-screen-frame-one flex-column">
+                    <p>SITEMAP</p>
+
+                    <ul class="nav-list flex-column">
+                        <li class="nav-item"><a href="#intro">INTRO</a></li>
+                        <li class="nav-item"><a href="#showcase-1">MOST RECENT</a></li>
+                        <li class="nav-item"><a href="#showcase-2">PROJECT 2</a></li>
+                        <li class="nav-item"><a href="#showcase-3">PROJECT 3</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-screen-frame-two flex-column">
+                    <ul class="nav-links-list">
+                        <li class="nav-link"><a href="https://www.facebook.com/profile.php?id=61574096698088" target="_blank"><i class="ri-facebook-circle-fill"></i></a><span>Facebook</span></li>
+                        <li class="nav-link"><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a><span>Instagram</span></li>
+                        <li class="nav-link"><a href="mailto:info@terrabluepools.com"><i class="ri-mail-send-fill"></i></a><span>Email</span></li>
+                        <li class="nav-link"><a href="tel:8323294855"><i class="ri-phone-fill"></i></a><span>Phone</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+        <div class="home-container container flex-column">
+            <div class="home-frame-one flex-column">
+                <ul class="home-list">
+                    <li class="home-list-item"><p>Design</p></li>
+                    <li class="home-list-item"><p>Engineering</p></li>
+                    <li class="home-list-item"><p>3D Modeling</p></li>
+                    <li class="home-list-item"><p>Construction</p></li>
+                    <li class="home-list-item"><p>Maintenance</p></li>
+                </ul>
+                <h1 class="home-title">Terra<span>Blue</span></h1>
+                <h4 class="home-subtitle">Custom project gallery.</h4>
+            </div>
+
+            <div class="home-frame-two flex">
+                <button class="home-button flex-center button transition"><a href="#intro">Get inspired</a></button>
+
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <img src="assets/img/Home-background-img.png" alt="" class="home-background-img">
+   </section>
+    <!-- =============================================================================================== -->
+
+    <main>
+
+        <!-- INTRO SECTION ========================================================================== -->
+        <section class="section intro" id="intro">
+            <div class="intro-container container flex-column">
+                <div class="intro-frame-one">
+                    <h4 class="intro-words reveal-type">
+                        All of our projects are custom made and designed to achive exactly what the clients envision.
+                        We strive for <b>quality and perfection with every build</b>.
+                    </h4>
+                </div>
+
+                <div class="intro-frame-two flex-column">
+                    <h3 class="intro-title">TerraBlue takes care of <span>everything.</span></h3>
+
+                    <ul class="intro-cards-container flex">
+                        <li class="intro-card flex-column">
+                            <div class="intro-card-img-container"><img src="assets/img/services-img-1.png" alt=""></div>
+                            <h5 class="intro-card-title">Design</h5>
+                        </li>
+
+                        <li class="intro-card flex-column">
+                            <div class="intro-card-img-container"><img src="assets/img/services-img-2.png" alt=""></div>
+                            <h5 class="intro-card-title">Permits</h5>
+                        </li>
+
+                        <li class="intro-card flex-column">
+                            <div class="intro-card-img-container"><img src="assets/img/services-img-3.png" alt=""></div>
+                            <h5 class="intro-card-title">Construction</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+
+        <!-- GALLERY-1 SECTION =========================================================================== -->
+        <section class="section showcase-1" id="showcase-1">
+            <div class="showcase-1-container flex-column container">
+                <div class="showcase-1-frame-one flex">
+                    <div class="section-accent showcase-1-accent flex-center"><p>Most-recent</p></div>
+                    <div class="accent-line section-line showcase-1-line"></div>
+                </div>
+
+                <ul class="showcase-1-frame-two flex">
+                    <li class="showcase-img-container-1">
+                        <mux-player
+                            class="gallery-video"
+                            stream-type="on-demand"
+                            playback-id="A00Fk8UIprckxS3t006eK01YZCVyRWXuDUQXoc2kqd8RZo"
+                            accent-color="#4DB5C1">
+                        </mux-player>
+                    </li>
+                    <li class="showcase-img-container-2"><img src="assets/img/Completed-pool-2.jpg" alt=""></li>
+                    <li class="showcase-img-container-3"><img src="assets/img/Completed-pool.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+
+        <!-- GALLERY-2 SECTION ============================================================================= -->
+        <section class="section showcase-2" id="showcase-2">
+            <div class="showcase-1-container flex-column container">
+                <div class="showcase-1-frame-one flex">
+                    <div class="accent-line section-line showcase-2-line"></div>
+                    <div class="section-accent showcase-2-accent flex-center"><p>Project-2</p></div>
+                </div>
+
+                <ul class="showcase-1-frame-two flex">
+                    <li class="showcase-img-container-1 flex-center"><h6>Video coming soon</h6></li>
+                    <li class="showcase-img-container-3 flex-center"><h6>Images coming soon</h6></li>
+                    <li class="showcase-img-container-2 flex-center"><h6>Images coming soon</h6></li>
+                </ul>
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+
+        <!-- GALLERY-3 SECTION =========================================================================== -->
+        <section class="section showcase-3" id="showcase-3">
+            <div class="showcase-1-container flex-column container">
+                <div class="showcase-1-frame-one flex">
+                    <div class="section-accent showcase-1-accent flex-center"><p>Project-3</p></div>
+                    <div class="accent-line section-line showcase-1-line"></div>
+                </div>
+
+                <ul class="showcase-1-frame-two flex">
+                    <li class="showcase-img-container-1 flex-center"><h6>Video coming soon</h6></li>
+                    <li class="showcase-img-container-3 flex-center"><h6>Images coming soon</h6></li>
+                    <li class="showcase-img-container-2 flex-center"><h6>Images coming soon</h6></li>
+                </ul>
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+
+         <!-- CONTACT SECTION =========================================================================== -->
+         <section class="contact section" id="contact">
+            <div class="contact-container container flex-column">
+                <h2 class="cta-title">Ready to transform your backyard <b>into an Oasis ?</b></h2>
+
+                <div class="contact-cta-container">
+                    <a href="https://calendly.com/rafaelsifuentes-etxsoftware/30min" target="_blank" rel="stylesheet" class="contact-link">Schedule a free consultation</a>
+                    <button onclick="openCalendly()" class="cta-button"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+
+                <a href="#gallery" class="contact-cta-link-alt">Go to main page</a>
+            </div>
+
+            <img src="assets/img/contact-background-img.png" alt="Contact background image" class="contact-img">
+        </section>
+        <!-- =========================================================================================== -->
+
+    </main>
+
+    <!-- FOOTER SECTION ================================================================================ -->
+    <footer class="footer section" id="footer">
+        <div class="footer-container container">
+
+            <div class="footer-frame-one flex-column">
+                <div onclick="scrollToSection('home')" class="footer-logo"><div class="footer-img"><img src="assets/img/Main-logo.png" alt="TerraBlue Logo"></div><h5>Terra<span>Blue</span></h5></div>
+                <div class="p-text">We are a custom pool builder and landscaping company located in Houston Tx.</div>
+                <div class="footer-info-container">
+                    <p>info@terrabluepools.com</p>
+                    <p>832.329.4855</p>
+                </div>
+
+                <ul class="footer-btn-links">
+                    <li onclick="openFace()" class="footer-btn"><i class="ri-facebook-circle-fill"></i></li>
+                    <li onclick="openInsta()" class="footer-btn"><i class="ri-instagram-fill"></i></li>
+                    <li onclick="openCalendly()" class="footer-btn"><i class="ri-calendar-event-line"></i></li>
+                    <li onclick="callNumber()" class="footer-btn"><i class="ri-phone-fill"></i></li>
+                </ul>
+            </div>
+
+            <div class="footer-frame-two">
+                <div class="footer-link-container">
+                    <h6>Home</h6>
+                    <ul>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#gallery">Portfolio</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#review">Client reviews</a></li>
+                        <li><a href="#timeline">Time-line</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-link-container">
+                    <h6>Client portal</h6>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Set up account</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-link-container">
+                    <h6>Our projects</h6>
+                    <ul>
+                        <li><a href="#Services">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="footer-signature">
+                <div><p>Made by <b>ETX</b> Software</p><div class="img-container"><img src="assets/img/code-logo.png" alt="ETX Design logo"></div></div>
+                <p class="p-text">&#169 2025</p>
+            </div>
+        </div>
+    </footer>
+    <!-- =============================================================================================== -->
+
+
+    <!-- JAVASCRIPT =============================================================== -->
+    <!-- SCROLL REVEAL JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- GSAP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type@0.3.3/umd/index.min.js"></script>
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- PAGE SPECIFIC JS -->
+    <script src="assets/main.js"></script>
+</body>
+</html>

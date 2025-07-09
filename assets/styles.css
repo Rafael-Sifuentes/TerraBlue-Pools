@@ -546,10 +546,17 @@ a{
   }
 
 .home-img{
+    --controls-display: none;
+    --controls-backdrop-display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100% !important;
     object-fit: cover;
     z-index: 0;
+    pointer-events: none ;
+    --media-object-fit: cover;
 }
 /*-============================================================================================- */
 
@@ -652,6 +659,10 @@ a{
 .service-card-component{
     gap: var(--gap-2);
     display: flex;
+}
+
+.service-card-component:hover .service-card-img{
+    transform: scale(1.2);
 }
 
 .service-card-component .card-content{
@@ -803,6 +814,14 @@ a{
     background-color: var(--body-color);
     color: var(--text-color-b);
     transform: translateY(-8px);
+}
+
+.gallery-card-button:hover p{
+    color: var(--text-color-b);
+}
+
+.gallery-card-button:hover a{
+    color: var(--text-color-b);
 }
 /* -====================- */
 .gallery-showcase{
@@ -1015,6 +1034,8 @@ a{
     overflow: hidden;
     border-radius: 4px;
     z-index: 4;
+    background-color: #050B0C;
+    --media-object-fit: cover;
 }
 
 .video-container img{
@@ -1803,7 +1824,7 @@ a{
     }
 
     .gallery-card-img{
-        width: 344px;
+        width: 528px;
     }
 
     .list-item-grid{

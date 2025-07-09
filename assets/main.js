@@ -209,7 +209,7 @@ document.querySelectorAll('.nav-list a').forEach((link) => {
   });
 
   // --- Swiper Sliders ---
-  new Swiper('.gallery-container', { slidesPerView: 1, spaceBetween: 24, speed: 600, loop: true, centeredSlide: true, autoplay: { delay: 2000, disableOnInteraction: true, }, navigation: { nextEl: '.gallery-swiper-next', prevEl: '.gallery-swiper-prev', }, breakpoints: { 744: { slidesPerView: 2, }, 1440: { centeredSlide: true, slidesPerView: 3, } } });
+  new Swiper('.gallery-container', { slidesPerView: 1, spaceBetween: 24, speed: 600, loop: true, centeredSlide: true, autoplay: { delay: 2500, disableOnInteraction: true, }, navigation: { nextEl: '.gallery-swiper-next', prevEl: '.gallery-swiper-prev', }, breakpoints: { 744: { slidesPerView: 2, }, 1440: { centeredSlide: true, slidesPerView: 2, } } });
   new Swiper('.review-container', { slidesPerView: 1, spaceBetween: 24, speed: 600, loop: false, centeredSlide: true, navigation: { nextEl: '.review-swiper-next', prevEl: '.review-swiper-prev', }, breakpoints: { 744: { slidesPerView: 2, }, 1440: { centeredSlide: true, slidesPerView: 3, } } });
 
   // --- Count Up Animation ---
@@ -229,59 +229,59 @@ document.querySelectorAll('.nav-list a').forEach((link) => {
     const showcaseCloseBtn = galleryShowcase.querySelector('.showcase-close-btn');
     const showcaseList = galleryShowcase.querySelector('.showcase-list');
 
-    galleryCards.forEach((card, index) => {
-        const viewProjectButton = card.querySelector('.gallery-card-button');
+    // galleryCards.forEach((card, index) => {
+    //     const viewProjectButton = card.querySelector('.gallery-card-button');
 
-        viewProjectButton.addEventListener('click', () => {
-            // Clear previous content
-            showcaseList.innerHTML = '';
+    //     viewProjectButton.addEventListener('click', () => {
+    //         // Clear previous content
+    //         showcaseList.innerHTML = '';
 
-            // Create the corresponding showcase item
-            const showcaseItem = document.createElement('li');
-            showcaseItem.classList.add('showcase-list-item', 'flex-column');
+    //         // Create the corresponding showcase item
+    //         const showcaseItem = document.createElement('li');
+    //         showcaseItem.classList.add('showcase-list-item', 'flex-column');
 
-            // Determine the image source based on the clicked card's index
-            const imgSrc = card.querySelector('.gallery-card-img img').src;
+    //         // Determine the image source based on the clicked card's index
+    //         const imgSrc = card.querySelector('.gallery-card-img img').src;
 
-            // Create the image container (you can customize this structure)
-            const imgContainer = document.createElement('div');
-            imgContainer.classList.add('list-item-grid', 'grid');
-            imgContainer.innerHTML = `
-                <div class="img-container"><img src="${imgSrc}" alt="Project ${index + 1} image"></div>
-                <div class="img-container"><img src="assets/img/gallery-img-${index + 2}.png" alt="Project ${index + 2} image"></div>
-                <div class="img-container"><img src="assets/img/gallery-img-${index + 3}.png" alt="Project ${index + 3} image"></div>
-                `;
+    //         // Create the image container (you can customize this structure)
+    //         const imgContainer = document.createElement('div');
+    //         imgContainer.classList.add('list-item-grid', 'grid');
+    //         imgContainer.innerHTML = `
+    //             <div class="img-container"><img src="${imgSrc}" alt="Project ${index + 1} image"></div>
+    //             <div class="img-container"><img src="assets/img/gallery-img-${index + 2}.png" alt="Project ${index + 2} image"></div>
+    //             <div class="img-container"><img src="assets/img/gallery-img-${index + 3}.png" alt="Project ${index + 3} image"></div>
+    //             `;
 
-            const showcaseButtonContainer = document.createElement('div');
-            showcaseButtonContainer.classList.add('showcase-button-container');
-            showcaseButtonContainer.innerHTML = `
-                <button onClick="openCalendly()" class="showcase-button"><p class="p-text">Schedule appointment</p></button>
-                <button class="showcase-close-btn"><i class="ri-close-line"></i><p>Close</p></button>
-            `;
+    //         const showcaseButtonContainer = document.createElement('div');
+    //         showcaseButtonContainer.classList.add('showcase-button-container');
+    //         showcaseButtonContainer.innerHTML = `
+    //             <button onClick="openCalendly()" class="showcase-button"><p class="p-text">Schedule appointment</p></button>
+    //             <button class="showcase-close-btn"><i class="ri-close-line"></i><p>Close</p></button>
+    //         `;
 
-            showcaseItem.appendChild(imgContainer);
-            showcaseItem.appendChild(showcaseButtonContainer);
-            showcaseList.appendChild(showcaseItem);
+    //         showcaseItem.appendChild(imgContainer);
+    //         showcaseItem.appendChild(showcaseButtonContainer);
+    //         showcaseList.appendChild(showcaseItem);
 
-            // Add event listener to the newly created close button
-            const newCloseButton = showcaseItem.querySelector('.showcase-close-btn');
-            newCloseButton.addEventListener('click', () => {
-                galleryShowcase.classList.remove('showcase-active');
-                document.body.style.overflow = ''; // Re-enable scrolling
-            });
+    //         // Add event listener to the newly created close button
+    //         const newCloseButton = showcaseItem.querySelector('.showcase-close-btn');
+    //         newCloseButton.addEventListener('click', () => {
+    //             galleryShowcase.classList.remove('showcase-active');
+    //             document.body.style.overflow = ''; // Re-enable scrolling
+    //         });
 
-            galleryShowcase.classList.add('showcase-active');
-            document.body.style.overflow = 'hidden'; // Disable scrolling on the body
-        });
-    });
+    //         galleryShowcase.classList.add('showcase-active');
+    //         document.body.style.overflow = 'hidden'; // Disable scrolling on the body
+    //     });
+    // });
 
-    // Close the showcase if the initial close button (if it exists) is clicked
-    if (showcaseCloseBtn) {
-        showcaseCloseBtn.addEventListener('click', () => {
-            galleryShowcase.classList.remove('showcase-active');
-            document.body.style.overflow = ''; // Re-enable scrolling
-        });
-    }
+    // // Close the showcase if the initial close button (if it exists) is clicked
+    // if (showcaseCloseBtn) {
+    //     showcaseCloseBtn.addEventListener('click', () => {
+    //         galleryShowcase.classList.remove('showcase-active');
+    //         document.body.style.overflow = ''; // Re-enable scrolling
+    //     });
+    // }
 });
 
 
